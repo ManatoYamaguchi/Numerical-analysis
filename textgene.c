@@ -15,8 +15,15 @@ int main()
 	while((c=fgetc(lf))!=EOF)
 	{
 	
-		if(isalpha(c)){
-			fputc(c,sf);
+		if(isalpha(c))
+		{
+			if('A' <= c && c <= 'Z')
+			{
+				c = c + ('a' - 'A');
+				fputc(c,sf);
+			} else {
+				fputc(c,sf);
+			}
 		} else if(c == ' ') {
 			fputc(c,sf);
 		} else if(c == '\n') {
