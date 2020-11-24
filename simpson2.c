@@ -28,7 +28,7 @@ int main()
 
 	difx = 1 / n;
 	x1 = 1;
-	x3 = difx;
+	x3 = 1 + difx;
 	x2 = (x1 + x3) / 2;
 	sumy = 0;
 

@@ -23,7 +23,7 @@ int main()
 
 	difx = 1 / n;
 	x1 = 1;
-	x2 = difx;
+	x2 = 1 + difx;
 	sumy = 0;
 
 	while(1)
