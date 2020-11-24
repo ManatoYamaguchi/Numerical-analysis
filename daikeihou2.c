@@ -18,6 +18,7 @@ int main()
 	printf("積分区間をn等分にします。\n");
 	printf("nの値を入力してください。\n");
 	printf("n = ");
+	//積分区間を何等分するかを決定
 
 	scanf("%lf", &n);
 
@@ -25,6 +26,7 @@ int main()
 	x1 = 1;
 	x2 = 1 + difx;
 	sumy = 0;
+	//各変数の初期値を決定
 
 	while(1)
 	{
@@ -41,8 +43,10 @@ int main()
 		x1 = x1 + difx;
 		x2 = x2 + difx;
 	}
+	//yの合計を導出
 
 	dfx = difx * sumy / 2;
+	//解を導出
 
 	printf("deltax = %f\n", difx);
 	printf("解 = %lf\n", dfx);
