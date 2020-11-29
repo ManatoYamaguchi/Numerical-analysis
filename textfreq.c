@@ -2,7 +2,7 @@
 
 int main()
 {
-	int count, num, alph, freqnum[27] = {0}; 
+	int count, alph, freqnum[27] = {0}; 
 	FILE *infile, *outfile;
 
 	if(!(infile = fopen("outalph.txt","r")) || (!(outfile = fopen("alphfreq.txt", "w"))))
@@ -25,9 +25,9 @@ int main()
 	{
 		if(count == 26)					//２６番目(space)の時の入力
 		{
-			fprintf(outfile, "%d : space\n", freqnum[26]);
+			fprintf(outfile, "%d : '_'\n", freqnum[26]);
 		} else {					//２６番目(space)以外の時の入力
-			fprintf(outfile, "%d : %c\n", freqnum[count], count + 97);
+			fprintf(outfile, "%d : '%c'\n", freqnum[count], count + 97);
 		}
 	}	
 
